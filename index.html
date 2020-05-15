@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+<div style="display: none;">
+  <div id="userchat" style="margin: 3px; overflow: hidden;"></div>
+  <div id="innerItem" style="
+        width: max-content;
+        background-color: #fffcd6;
+        float: right;
+        padding: 5px;
+        max-width: 80%;
+        word-wrap: break-word;
+      "></div>
+</div>
+
+<body>
+  <div class="container pt-3 border" style="background-color: #4b5f5f; border-radius: 15px;">
+    <h2 style="color: coral;" class="col-sm-9">Fao Chat 0.1</h2>
+    <h4 id="name-box" style="color: darkseagreen;" class="col-sm-8">
+      Please login
+    </h4>
+    <div id="msgs" class="col-sm-12 border" style="
+          height: 500px;
+          background-color: black;
+          margin-bottom: 0px;
+          overflow: auto;
+        "></div>
+    <div class="input-group mb-3">
+      <input type="text" id="msgData" class="form-control" style="width: 95%;" onkeypress="handleKeyPress(event)" />
+      <button id="sendMsgBtn" class="btn btn-primary input-group-append" style="width: 5%; padding: auto;">
+        <i class="fa fa-paper-plane" aria-hidden="true" style="margin: auto;"></i>
+      </button>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" id="loginInput" class="form-control col-sm-5" />
+      <button id="loginBtn" class="btn btn-success col-sm-3">
+        Login
+      </button>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" id="otherUsernameInput" class="form-control col-sm-5" />
+      <button id="connectToOtherUsernameBtn" class="btn btn-info col-sm-3">
+        Connect
+      </button>
+    </div>
+  </div>
+  <script src="habijabi.js"></script>
+</body>
+
+</html>
